@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 | 1등 되게 해주세요!</title>
+<meta name="description" content="모바일 게임 '1등 되게 해주세요!'의 개인정보처리방침 / Privacy Policy">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css">
+
+<!--
+  ============================================================
+  ✏️ 여기만 수정하세요 (EDIT HERE)
+  ============================================================
+  - team     : 개발자/팀 이름 (Play Console의 개발자 이름과 맞추면 좋아요)
+  - email    : 문의용 이메일 (Play Console 연락처 이메일과 동일 권장)
+  - officer  : 개인정보 보호책임자 이름 (팀 대표 1명)
+  - date     : 시행일
+  - ads      : 광고(Google AdMob 등)를 넣었으면 true, 아니면 false
+  - analytics: Firebase / Unity Analytics 등 분석 도구를 넣었으면 true
+  - analyticsName: 사용하는 분석 도구 이름
+  ============================================================
+-->
+<script>
+  const CONFIG = {
+    team: "1등되게 해주세요! 팀",
+    email: "1deungplease@gmail.com",
+    officer: "이승현",
+    dateKo: "2026년 10월 31일",
+    dateEn: "October 31, 2026",
+    ads: false,
+    analytics: false,
+    analyticsName: "Firebase Analytics"
+  };
+</script>
+
+<style>
+  :root {
+    --bg: #f6f4ef;
+    --paper: #ffffff;
+    --ink: #1d1d1f;
+    --muted: #5f5f66;
+    --line: #e4e1d8;
+    --accent: #e8a317;
+    --accent-ink: #3a2a00;
+    --link: #1f5fbf;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141416;
+      --paper: #1d1d20;
+      --ink: #ececef;
+      --muted: #a3a3ab;
+      --line: #2e2e33;
+      --accent: #f2b632;
+      --accent-ink: #1d1400;
+      --link: #7fb0ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    line-height: 1.75;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { margin-bottom: 24px; }
+  .badge {
+    display: inline-block;
+    font-family: "Galmuri11", "Galmuri14", monospace;
+    font-size: 13px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    padding: 4px 10px;
+    border-radius: 4px;
+    letter-spacing: .02em;
+  }
+  h1 {
+    font-family: "Galmuri14", "Galmuri11", "Pretendard", sans-serif;
+    font-size: clamp(24px, 6vw, 34px);
+    line-height: 1.35;
+    margin: 14px 0 6px;
+  }
+  .sub { color: var(--muted); margin: 0; font-size: 15px; }
+  .lang {
+    display: inline-flex;
+    gap: 4px;
+    margin-top: 18px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 4px;
+  }
+  .lang button {
+    font: inherit;
+    font-size: 14px;
+    border: 0;
+    background: transparent;
+    color: var(--muted);
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .lang button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); font-weight: 600; }
+  article {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 28px 22px;
+  }
+  article[hidden] { display: none; }
+  .intro { margin-top: 0; }
+  nav.toc {
+    border: 1px dashed var(--line);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 20px 0 8px;
+    font-size: 15px;
+  }
+  nav.toc ol { margin: 6px 0 0; padding-left: 20px; }
+  nav.toc a { color: var(--ink); text-decoration: none; }
+  nav.toc a:hover { color: var(--link); text-decoration: underline; }
+  h2 {
+    font-size: 19px;
+    margin: 34px 0 8px;
+    padding-top: 6px;
+    scroll-margin-top: 16px;
+  }
+  h2 .n {
+    font-family: "Galmuri11", monospace;
+    color: var(--accent);
+    margin-right: 6px;
+  }
+  ul { padding-left: 20px; margin: 8px 0; }
+  li { margin: 4px 0; }
+  a { color: var(--link); }
+  .table-wrap { overflow-x: auto; margin: 10px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; min-width: 460px; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: color-mix(in srgb, var(--accent) 14%, var(--paper)); font-weight: 600; }
+  .contact {
+    background: color-mix(in srgb, var(--accent) 10%, var(--paper));
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 10px 0;
+  }
+  .contact p { margin: 2px 0; }
+  .note { color: var(--muted); font-size: 14px; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 28px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="badge">PRIVACY POLICY</span>
+    <h1>'1등 되게 해주세요!'<br>개인정보처리방침</h1>
+    <p class="sub">시행일 / Effective date: <span data-k="dateKo"></span> · <span data-k="dateEn"></span></p>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="ko" aria-pressed="true">한국어</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <!-- ===================== 한국어 ===================== -->
+  <article id="ko" lang="ko">
+    <p class="intro"><strong data-k="team"></strong>(이하 '개발자')은(는) 모바일 게임 <strong>'1등 되게 해주세요!'</strong>(이하 '게임')를 이용하는 이용자의 개인정보를 소중히 여기며, 「개인정보 보호법」 등 관련 법령과 Google Play 개발자 정책을 준수합니다. 본 방침은 게임이 어떤 정보를 처리하는지, 그 정보를 어떻게 이용하고 보호하는지 안내합니다.</p>
+
+    <nav class="toc" aria-label="목차">
+      <strong>목차</strong>
+      <ol>
+        <li><a href="#ko-1">처리하는 정보의 항목</a></li>
+        <li><a href="#ko-2">처리 목적</a></li>
+        <li><a href="#ko-3">보유 및 이용 기간</a></li>
+        <li><a href="#ko-4">제3자 제공</a></li>
+        <li><a href="#ko-5">외부 서비스(처리 위탁)</a></li>
+        <li><a href="#ko-6">파기 절차 및 방법</a></li>
+        <li><a href="#ko-7">이용자의 권리와 행사 방법</a></li>
+        <li><a href="#ko-8">아동의 개인정보</a></li>
+        <li><a href="#ko-9">안전성 확보 조치</a></li>
+        <li><a href="#ko-10">개인정보 보호책임자</a></li>
+        <li><a href="#ko-11">권익침해 구제 방법</a></li>
+        <li><a href="#ko-12">방침의 변경</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="ko-1"><span class="n">01</span>처리하는 정보의 항목</h2>
+    <ul>
+      <li>게임은 <strong>회원가입이나 로그인 없이</strong> 이용할 수 있으며, 이름·이메일·전화번호·위치 정보 등 이용자를 직접 식별할 수 있는 개인정보를 수집하지 않습니다.</li>
+      <li>게임 진행 데이터(점수, 진행 상황, 소리 등 설정값)는 <strong>이용자의 기기 내부에만 저장</strong>되며, 개발자의 서버로 전송되지 않습니다.</li>
+      <li data-if="ads">게임 내 광고 제공을 위해 Google AdMob이 광고 ID, 기기 정보(기종, 운영체제 버전 등), IP 주소, 광고 노출·클릭 정보를 수집할 수 있습니다.</li>
+      <li data-if="analytics">서비스 개선 및 오류 분석을 위해 <span data-k="analyticsName"></span>이(가) 앱 이용 기록, 기기 정보, 앱 인스턴스 ID, 오류 발생 기록을 수집할 수 있습니다.</li>
+      <li>이용자가 이메일로 문의하는 경우, 답변을 위해 이용자의 이메일 주소와 문의 내용을 처리합니다.</li>
+    </ul>
+
+    <h2 id="ko-2"><span class="n">02</span>처리 목적</h2>
+    <ul>
+      <li>게임 진행 상황 저장 및 게임 서비스 제공</li>
+      <li>이용자 문의 접수 및 답변</li>
+      <li data-if="ads">게임 내 광고 제공</li>
+      <li data-if="analytics">게임 이용 통계 분석, 오류 파악 및 서비스 개선</li>
+    </ul>
+
+    <h2 id="ko-3"><span class="n">03</span>보유 및 이용 기간</h2>
+    <ul>
+      <li>기기에 저장된 게임 데이터는 이용자가 게임을 삭제하거나 앱 데이터를 지우면 함께 삭제됩니다.</li>
+      <li>문의 처리를 위해 받은 이메일 주소와 문의 내용은 처리가 끝난 후 지체 없이 파기합니다.</li>
+      <li data-if="ads analytics">외부 서비스가 수집한 정보는 각 서비스 제공자의 정책에 따라 보관·파기됩니다.</li>
+    </ul>
+
+    <h2 id="ko-4"><span class="n">04</span>제3자 제공</h2>
+    <p>개발자는 이용자의 개인정보를 제3자에게 제공하지 않습니다. 다만 법령에 특별한 규정이 있거나 수사기관이 법령에 정해진 절차에 따라 요청하는 경우에는 예외로 합니다.</p>
+
+    <h2 id="ko-5"><span class="n">05</span>외부 서비스(처리 위탁)</h2>
+    <p data-if-not="ads analytics">게임은 개인정보를 처리하는 외부 서비스를 사용하지 않으며, 개인정보 처리를 외부에 위탁하지 않습니다.</p>
+    <div data-if="ads analytics">
+      <p>게임은 다음 외부 서비스를 사용하며, 각 서비스는 자체 개인정보처리방침에 따라 정보를 처리합니다.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>서비스</th><th>제공자</th><th>목적</th><th>처리방침</th></tr></thead>
+          <tbody>
+            <tr data-if="ads"><td>Google AdMob</td><td>Google LLC</td><td>광고 제공</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">바로가기</a></td></tr>
+            <tr data-if="analytics"><td data-k="analyticsName"></td><td>해당 서비스 제공자</td><td>이용 통계·오류 분석</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener" data-analytics-link>바로가기</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h2 id="ko-6"><span class="n">06</span>파기 절차 및 방법</h2>
+    <p>보유 기간이 지나거나 처리 목적이 달성된 개인정보는 지체 없이 파기합니다. 전자적 파일은 복구할 수 없는 방법으로 삭제하며, 기기에 저장된 게임 데이터는 앱 삭제 시 운영체제에 의해 함께 삭제됩니다.</p>
+
+    <h2 id="ko-7"><span class="n">07</span>이용자의 권리와 행사 방법</h2>
+    <ul>
+      <li>이용자는 언제든지 자신의 개인정보에 대해 열람, 정정, 삭제, 처리정지를 요구할 수 있으며, 아래 연락처로 요청하면 지체 없이 조치합니다.</li>
+      <li>기기에 저장된 게임 데이터는 <strong>설정 &gt; 애플리케이션 &gt; 1등 되게 해주세요! &gt; 저장공간 &gt; 데이터 삭제</strong> 또는 앱 삭제로 직접 지울 수 있습니다.</li>
+      <li data-if="ads">기기의 <strong>설정 &gt; Google &gt; 광고</strong>에서 광고 ID를 재설정하거나 삭제하여 맞춤 광고를 제한할 수 있습니다.</li>
+    </ul>
+
+    <h2 id="ko-8"><span class="n">08</span>아동의 개인정보</h2>
+    <p>개발자는 만 14세 미만 아동의 개인정보를 알면서 수집하지 않습니다. 만 14세 미만 아동의 개인정보가 수집된 사실을 알게 되면 즉시 삭제합니다. 보호자께서 이와 관련해 문의하시려면 아래 연락처로 연락해 주세요.</p>
+
+    <h2 id="ko-9"><span class="n">09</span>안전성 확보 조치</h2>
+    <p>개발자는 개인정보를 처리하는 범위를 최소화하고, 문의 메일 등 개인정보에 접근할 수 있는 인원을 제한하며, 비밀번호 등으로 보호된 계정에서만 관리합니다.<span data-if="ads analytics"> 외부 서비스와의 통신은 암호화된 연결(HTTPS)을 통해 이루어집니다.</span></p>
+
+    <h2 id="ko-10"><span class="n">10</span>개인정보 보호책임자</h2>
+    <div class="contact">
+      <p>성명: <span data-k="officer"></span> (<span data-k="team"></span>)</p>
+      <p>이메일: <a data-k="email" data-mailto></a></p>
+    </div>
+    <p class="note">개인정보 관련 문의, 불만 처리, 피해 구제 등은 위 연락처로 문의해 주세요.</p>
+
+    <h2 id="ko-11"><span class="n">11</span>권익침해 구제 방법</h2>
+    <p>개인정보 침해로 인한 구제를 받기 위해 아래 기관에 분쟁 해결이나 상담을 신청할 수 있습니다.</p>
+    <ul>
+      <li>개인정보침해신고센터: (국번없이) 118 · <a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a></li>
+      <li>개인정보분쟁조정위원회: 1833-6972 · <a href="https://www.kopico.go.kr" target="_blank" rel="noopener">www.kopico.go.kr</a></li>
+      <li>대검찰청: (국번없이) 1301 · <a href="https://www.spo.go.kr" target="_blank" rel="noopener">www.spo.go.kr</a></li>
+      <li>경찰청: (국번없이) 182 · <a href="https://ecrm.police.go.kr" target="_blank" rel="noopener">ecrm.police.go.kr</a></li>
+    </ul>
+
+    <h2 id="ko-12"><span class="n">12</span>방침의 변경</h2>
+    <p>본 방침은 <span data-k="dateKo"></span>부터 적용됩니다. 내용이 변경되는 경우 이 페이지를 통해 시행일 이전에 공지합니다.</p>
+  </article>
+
+  <!-- ===================== English ===================== -->
+  <article id="en" lang="en" hidden>
+    <p class="intro"><strong data-k="team"></strong> ("Developer") respects your privacy. This Privacy Policy explains what information the mobile game <strong>'1등 되게 해주세요!' (Please Let Me Win First Prize!)</strong> ("Game") handles, and how it is used and protected.</p>
+
+    <h2 id="en-1"><span class="n">01</span>Information We Handle</h2>
+    <ul>
+      <li>The Game can be played <strong>without sign-up or login</strong>. We do not collect personally identifiable information such as your name, email, phone number or location.</li>
+      <li>Game progress (scores, progress, settings) is <strong>stored only on your device</strong> and is never sent to the Developer's servers.</li>
+      <li data-if="ads">To show ads, Google AdMob may collect your advertising ID, device information (model, OS version), IP address, and ad interaction data.</li>
+      <li data-if="analytics">To improve the Game and fix errors, <span data-k="analyticsName"></span> may collect app usage data, device information, app instance ID and crash logs.</li>
+      <li>If you contact us by email, we process your email address and message to reply.</li>
+    </ul>
+
+    <h2 id="en-2"><span class="n">02</span>How We Use Information</h2>
+    <ul>
+      <li>Saving game progress and providing the Game</li>
+      <li>Responding to your inquiries</li>
+      <li data-if="ads">Displaying in-game ads</li>
+      <li data-if="analytics">Usage analytics, error tracking and service improvement</li>
+    </ul>
+
+    <h2 id="en-3"><span class="n">03</span>Retention</h2>
+    <ul>
+      <li>Game data stored on your device is deleted when you uninstall the Game or clear its app data.</li>
+      <li>Email addresses and messages received for support are deleted promptly after the inquiry is resolved.</li>
+      <li data-if="ads analytics">Information collected by third-party services is retained and deleted according to their own policies.</li>
+    </ul>
+
+    <h2 id="en-4"><span class="n">04</span>Sharing</h2>
+    <p>We do not sell or share your personal information with third parties, except where required by law.</p>
+
+    <h2 id="en-5"><span class="n">05</span>Third-Party Services</h2>
+    <p data-if-not="ads analytics">The Game does not use any third-party services that process personal information.</p>
+    <div data-if="ads analytics">
+      <p>The Game uses the following services, which process information under their own privacy policies:</p>
+      <ul>
+        <li data-if="ads">Google AdMob (Google LLC) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
+        <li data-if="analytics"><span data-k="analyticsName"></span> — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" data-analytics-link>Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <h2 id="en-6"><span class="n">06</span>Your Rights &amp; Data Deletion</h2>
+    <ul>
+      <li>You may request access to, correction or deletion of your personal information at any time by contacting us.</li>
+      <li>You can delete all game data yourself via <strong>Settings &gt; Apps &gt; 1등 되게 해주세요! &gt; Storage &gt; Clear data</strong>, or by uninstalling the Game.</li>
+      <li data-if="ads">You can reset or delete your advertising ID in <strong>Settings &gt; Google &gt; Ads</strong> to limit personalized ads.</li>
+    </ul>
+
+    <h2 id="en-7"><span class="n">07</span>Children's Privacy</h2>
+    <p>We do not knowingly collect personal information from children under 13 (or under 14 in Korea). If we learn that such information has been collected, we will delete it immediately. Parents or guardians may contact us with any concerns.</p>
+
+    <h2 id="en-8"><span class="n">08</span>Security</h2>
+    <p>We minimize the information we handle and restrict access to support emails to authorized team members using password-protected accounts.<span data-if="ads analytics"> Communication with third-party services is encrypted (HTTPS).</span></p>
+
+    <h2 id="en-9"><span class="n">09</span>Contact</h2>
+    <div class="contact">
+      <p>Privacy Officer: <span data-k="officer"></span> (<span data-k="team"></span>)</p>
+      <p>Email: <a data-k="email" data-mailto></a></p>
+    </div>
+
+    <h2 id="en-10"><span class="n">10</span>Changes</h2>
+    <p>This policy is effective as of <span data-k="dateEn"></span>. Any changes will be posted on this page before they take effect.</p>
+  </article>
+
+  <footer>© <span data-k="team"></span> · 1등 되게 해주세요!</footer>
+</div>
+
+<script>
+  (function () {
+    var C = CONFIG;
+    // 값 채우기
+    document.querySelectorAll("[data-k]").forEach(function (el) {
+      var v = C[el.getAttribute("data-k")];
+      if (v == null) return;
+      el.textContent = v;
+      if (el.hasAttribute("data-mailto")) el.href = "mailto:" + v;
+    });
+    // 조건부 항목: data-if="ads analytics" → 둘 중 하나라도 true면 표시
+    function on(list) { return list.split(/\s+/).some(function (k) { return !!C[k]; }); }
+    document.querySelectorAll("[data-if]").forEach(function (el) {
+      if (!on(el.getAttribute("data-if"))) el.remove();
+    });
+    document.querySelectorAll("[data-if-not]").forEach(function (el) {
+      if (on(el.getAttribute("data-if-not"))) el.remove();
+    });
+    // 분석 도구 처리방침 링크 (Unity면 Unity 링크로)
+    if (/unity/i.test(C.analyticsName)) {
+      document.querySelectorAll("[data-analytics-link]").forEach(function (a) {
+        a.href = "https://unity.com/legal/privacy-policy";
+      });
+    }
+    // 언어 전환 (#en 으로 열면 영어)
+    var btns = document.querySelectorAll(".lang button");
+    function setLang(l) {
+      document.getElementById("ko").hidden = l !== "ko";
+      document.getElementById("en").hidden = l !== "en";
+      document.documentElement.lang = l;
+      btns.forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.lang === l ? "true" : "false"); });
+    }
+    btns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        setLang(b.dataset.lang);
+        history.replaceState(null, "", b.dataset.lang === "en" ? "#en" : location.pathname);
+      });
+    });
+    if (location.hash.indexOf("en") === 1) setLang("en");
+  })();
+</script>
+</body>
+</html>
